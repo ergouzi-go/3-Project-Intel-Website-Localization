@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intel: Sustainability Through the Ages</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -126,8 +128,165 @@
         </article>
       </div>
     </section>
+
+    <!-- New sustainability highlights section -->
+    <section class="container py-5" aria-labelledby="highlights-heading">
+      <h2 id="highlights-heading" class="visually-hidden">Sustainability initiatives</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <article class="card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <h3 class="card-title h5 fw-bold mb-3 text-primary">
+                <i class="bi bi-globe2 me-2" aria-hidden="true"></i>
+                Net-Zero Commitment
+              </h3>
+              <p class="card-text">Intel aims to achieve net-zero greenhouse gas emissions across its global operations by 2040.</p>
+              <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#netzero-modal" aria-label="Learn more about Net-Zero Commitment">
+                Learn More
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col">
+          <article class="card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <h3 class="card-title h5 fw-bold mb-3 text-primary">
+                <i class="bi bi-droplet-fill me-2" aria-hidden="true"></i>
+                Water Conservation
+              </h3>
+              <p class="card-text">Intel has restored billions of gallons of water to local watersheds through innovative recycling projects.</p>
+              <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#water-modal" aria-label="Learn more about Water Conservation">
+                Learn More
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col">
+          <article class="card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <h3 class="card-title h5 fw-bold mb-3 text-primary">
+                <i class="bi bi-sun-fill me-2" aria-hidden="true"></i>
+                Renewable Energy
+              </h3>
+              <p class="card-text">Intel is one of the largest corporate buyers of renewable energy, powering its factories with 100% green electricity.</p>
+              <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#energy-modal" aria-label="Learn more about Renewable Energy">
+                Learn More
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter subscription section -->
+    <section class="container-fluid px-0 py-5 newsletter-fullwidth" aria-labelledby="newsletter-heading">
+      <div class="row g-0">
+        <div class="col-12">
+          <div class="card border-0 shadow-sm newsletter-card overflow-hidden w-100">
+            <div class="row g-0 align-items-center">
+              <div class="col-md-5 bg-primary text-white p-4 text-center text-md-start">
+                <p class="text-uppercase fw-semibold mb-2 opacity-75">Stay informed</p>
+                <h2 id="newsletter-heading" class="h4 fw-bold mb-3">Subscribe to Intel sustainability updates</h2>
+                <p class="mb-0 opacity-85">Get the latest news on Intel’s climate goals, water stewardship, and renewable energy progress.</p>
+              </div>
+              <div class="col-md-7 p-4">
+                <form role="form" aria-label="Newsletter signup form" class="row g-3 align-items-center">
+                  <div class="col-12 col-sm-8">
+                    <label for="newsletter-email" class="form-label visually-hidden">Email address</label>
+                    <input type="email" class="form-control form-control-lg" id="newsletter-email" name="email" placeholder="name@example.com" autocomplete="email" required />
+                  </div>
+                  <div class="col-12 col-sm-4 d-grid">
+                    <button type="submit" class="btn btn-primary btn-lg">Subscribe</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <p class="timeline-footer">Scroll to view timeline | Hover or focus cards to learn more.</p>
+  <footer class="py-4 mt-3 text-center text-muted">
+    <div class="container">
+      <p class="mb-2">© 2024 Intel Corporation</p>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a href="#" class="link-primary">Privacy Policy</a>
+        <a href="#" class="link-primary">Terms of Use</a>
+        <a href="#" class="link-primary">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="netzero-modal" tabindex="-1" aria-labelledby="netzero-modal-label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="netzero-modal-label">Net-Zero Commitment</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Intel is advancing a long-term plan to cut emissions across manufacturing, operations, and supply chains while investing in cleaner technologies.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="water-modal" tabindex="-1" aria-labelledby="water-modal-label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="water-modal-label">Water Conservation</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Intel uses advanced water recycling and restoration programs to return water to nearby ecosystems and reduce pressure on local resources.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="energy-modal" tabindex="-1" aria-labelledby="energy-modal-label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="energy-modal-label">Renewable Energy</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Intel is expanding renewable electricity purchases and developing more efficient manufacturing systems to support a cleaner digital future.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const html = document.documentElement;
+      const bootstrapLink = document.querySelector('link[href*="bootstrap@5.3.0/dist/css/bootstrap"]');
+      const rtlCss = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css';
+      const ltrCss = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css';
+
+      const applyLanguageDirection = () => {
+        const activeLanguage = html.getAttribute('lang') || 'ar';
+        const isRtl = ['ar', 'fa', 'he', 'ur'].includes(activeLanguage);
+        html.setAttribute('dir', isRtl ? 'rtl' : 'ltr');
+        if (bootstrapLink) {
+          bootstrapLink.href = isRtl ? rtlCss : ltrCss;
+        }
+      };
+
+      applyLanguageDirection();
+
+      const observer = new MutationObserver(() => {
+        applyLanguageDirection();
+      });
+
+      observer.observe(html, { attributes: true, attributeFilter: ['lang'] });
+    });
+  </script>
 </body>
 </html>
